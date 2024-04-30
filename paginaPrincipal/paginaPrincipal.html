@@ -1,12 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paginaPrincipal.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="paginaPrincipal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Inicio | TravessiaTour</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="fixed-top">
+        <a href="#header"
+          ><img
+            class="header-logo"
+            src="../assets/logo/LogoInteira.png"
+            alt="Logo TravessiaTour"
+          />
+          <img
+            class="mobileheader-logo"
+            src="../assets/logo/LogoCirculo.png"
+            alt="Logo TravessiaTour"
+          />
+        </a>
+        <ul class="navbar-botoes">
+          <li><a href="#header">Inicio</a></li>
+          <li><a href="../paginaInfos/paginaInfos.html">Informações</a></li>
+          <li><a href="../paginaIngresso/paginaIngresso.html">Ingressos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="sobre">
+      <h2 class="sobre-titulo">Sobre</h2>
+      <div class="sobre-info-container">
+        <p>
+          A travessia Petrópolis-Teresópolis é um clássico nacional de caminhada
+          e montanhismo, sendo por muitos considerada a travessia mais bonita do
+          Brasil.
+          <br />
+          <br />
+          Com cerca de 30 km de extensão, a travessia da Serra dos Órgãos exige
+          preparo físico e equipamento adequado. É necessária a presença de guia
+          experiente, principalmente no trecho entre os Castelos do Açú e a
+          Pedra do Sino.
+          <br />
+          <br />
+          Antes do início da caminhada é necessário pagar os ingressos e taxas
+          na portaria e assinar o <a
+            href="https://www.icmbio.gov.br/parnaserradosorgaos/images/TCRN.pdf"
+            >Termo de Conhecimento de Riscos e Normas.</a
+          > 
+          <br />
+          <br />
+          O termo deve ser preenchido ou entregue nas portarias do Parque. O
+          preenchimento do Termo é importante para o registro da entrada e saída
+          dos visitantes e para que o visitante tenha conhecimento sobre normas
+          e procedimentos de conduta. Por isso, é importante que o visitante
+          informe sua saída nas portarias aos vigilantes de plantão.
+        </p>
+        <img
+          src="../assets/paginaPrincipal/seçãoSobre/SeçãoSobre.png"
+          alt="Pessoas Acampando"
+        />
+      </div>
+    </section>
+
+    <section class="principais-pontos">
+      <h2 class="principais-pontos-titulo">Principais Pontos</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img
+            src="../assets/paginaPrincipal/seçãoPrincipaisPontos/1PedraDoSino.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pedra do Sino</h5>
+            <p class="card-text">
+              A subida até a Pedra do Sino na parte da tarde oferece a
+              oportunidade de apreciar o Pôr do Sol do ponto mais alto da Serra
+              dos Órgãos. Observar o anoitecer nesta localidade é uma
+              experiência altamente recomendável, especialmente em noites de
+              tempo bom. A vista da cidade do Rio de Janeiro à noite é
+              impressionante e certamente vale a visita.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../assets/paginaPrincipal/seçãoPrincipaisPontos/2Castelo do açu.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Castelo do Açu</h5>
+            <p class="card-text">
+              Durante a travessia, os caminhantes geralmente acampam nas
+              proximidades do Morro do Açú, utilizando-o como um ponto de
+              descanso estratégico. A uma altitude de 2.245 metros, conforme
+              evidenciado na imagem, é possível avistar a Pedra da Tartaruga e,
+              ao seu lado, o abrigo do Açú.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="../assets/paginaPrincipal/seçãoPrincipaisPontos/3Portal do Hércules.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Portal do Hércules</h5>
+            <p class="card-text">
+              O Mirante está à beira de um precipício, oferecendo diversos
+              pontos de observação. É um local incrível, porém, requer cuidados
+              com a segurança, pois não possui nenhuma infraestrutura. A
+              sugestão é encontrar uma das várias rochas disponíveis para sentar
+              e apreciar a vista com tranquilidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ingressos">
+      <h1>Compre seu Ingresso</h1>
+      <a href="../paginaIngresso/paginaIngresso.html">
+        <img
+            class="botao-ingresso"
+            src="../assets/paginaPrincipal/compreSeuIngresso/BiChevronRightCirclebotaoIngresso.png"
+            alt=""
+        />
+      </a>
+    </section>
+
+    <footer class="rodape">
+      <a href="#header">
+        <img
+          class="footer-logo"
+          src="../assets/logo/LogoLogoEscrita.png"
+          alt=""
+        />
+      </a>
+      <ul class="criadores">
+        Criado em conjunto por:&nbsp;
+        <li>
+          <a href="https://www.linkedin.com/in/leoesplinio/" target="_blank"
+            >@Cássio Penha,&nbsp;</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/leoesplinio/" target="_blank"
+            >@César Guerra-Peixe,&nbsp;</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/khezac/" target="_blank"
+            >@Khezac Khalleb,&nbsp;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/heitor-bittencourt/"
+            target="_blank"
+            >@Heitor Bittencourt,&nbsp;</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/leoesplinio/" target="_blank"
+            >@Leonardo Esplinio</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

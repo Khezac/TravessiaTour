@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    height:100%;
+    background-image: linear-gradient(#58B8FF, #60BEFF, #60BEFF, #86CDFF, #9ED7FF, #B2DFFF, #C3E6FF, #CAE9FF, #D2EDFF, #FFFFFF);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ESTILIZAÇÂO DO HEADER */
+
+#header{
+    display: flex;
+    padding:1% 5% 0 5%;
+    width: 100%;
+    height: 85vh;
+    background-image: url(../assets/paginaPrincipal/topoPaginaPrincipal.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.header-logo{
+    height: 90px;
+}
+
+.mobileheader-logo{
+    display: none;
+}
+
+.fixed-top{
+    display: flex;
+    gap: 20%;
+    height: 15%;
+    padding:1% 5% 1% 5%;
+    background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
+}
+
+.navbar-botoes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:30%;
+    margin: 0;
+}
+
+.navbar-botoes li{
+    margin: 0;
+}
+
+.fixed-top a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+/* ESTILIZAÇÂO DO HEADER */
+
+/* ESTILZIAÇÂO DO SOBRE */
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+.sobre-titulo{
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.sobre-info-container,.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.sobre-info-container p{
+    width: 70ch;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.sobre-info-container img{
+    width: 63%;
+    object-fit: cover;
+}
+
+/* ESTILZIAÇÂO DO SOBRE */
+
+/* ESTILIZAÇÂO DOS PRINCIPAIS PONTOS */
+
+.principais-pontos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 6% 10%;
+    width: 80%;
+}
+
+.principais-pontos-titulo{
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    text-align: center;
+    width: 24rem;
+    transition-duration: 0.2s;
+}
+
+.card:hover{
+    scale:1.05;
+    box-shadow: -7px 6px 20px 2px black;
+}
+
+/* ESTILIZAÇÂO DOS PRINCIPAIS PONTOS */
+
+/* COMPRE SEU INGRESSO */
+
+.ingressos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../assets/paginaPrincipal/compreSeuIngresso/compreSeuIngresso.png);
+    object-fit: cover;
+    background-size: cover;
+    height: 600px;
+}
+
+.ingressos h1{
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    font-size: 54px;
+}
+
+.ingressos img{
+    width: 100%;
+}
+
+.botao-ingresso{
+    transition-duration: 0.1s;
+}
+
+.botao-ingresso:hover{
+    scale: 1.1;
+}
+
+/* COMPRE SEU INGRESSO */
+
+/* RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-image: linear-gradient(#FFFFFF, #9DD7FF, #7DADD6, #5578A3, #314875, #253765, #172654, #030A39);
+    width: 100%;
+}
+
+.rodape img{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    margin-right: 5%;
+    text-shadow: 0 0 5px black;
+}
+
+.footer-logo{
+    height: 90px;
+}
+
+.criadores{
+    margin: 0;
+}
+
+.criadores a{
+    color: white;
+    text-decoration: none;
+}
+
+.criadores a:hover{
+    color: rgb(192, 192, 192);
+}
+/* RODAPÉ */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+
+    .header-logo{
+        display: none;
+    }
+
+    .mobileheader-logo{
+        display: block;
+        width: 60px;
+    }
+
+    .sobre-info-container,.cards-container{
+        width: 10%;
+    }
+
+    .sobre-info-container p{
+        width: 10ch;
+    }
+
+    .criadores a{
+        font-size: 5px;
+    }
+
+}
