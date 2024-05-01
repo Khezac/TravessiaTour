@@ -25,7 +25,7 @@ html{
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .header-logo{
@@ -36,9 +36,14 @@ html{
     display: none;
 }
 
+.mobile-logo-escrita{
+    display: none;
+}
+
 .fixed-top{
+    position: relative;
     display: flex;
-    gap: 20%;
+    align-items: center;
     height: 15%;
     padding:1% 5% 1% 5%;
     background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
@@ -48,12 +53,21 @@ html{
     list-style: none;
     display: flex;
     align-items: center;
-    gap:30%;
+    gap: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
     margin: 0;
 }
 
 .navbar-botoes li{
     margin: 0;
+}
+
+.dropdown{
+    display: none;
 }
 
 .fixed-top a{
@@ -89,7 +103,6 @@ html{
 
 .sobre-info-container p{
     width: 70ch;
-    font-size: 22px;
     font-weight: 400;
 }
 
@@ -120,13 +133,17 @@ html{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .card{
     text-align: center;
     width: 24rem;
     transition-duration: 0.2s;
+}
+
+.card p::first-line{
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .card:hover{
@@ -212,11 +229,54 @@ html{
 .criadores a:hover{
     color: rgb(192, 192, 192);
 }
+
+.mobile-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.footer-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer-opensource{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-rodape p{
+    margin: 0;
+}
+
 /* RODAPÉ */
 
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px){
+
+    /* HEADER MEDIA QUERIES */
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-top{
+        height: 10%;
+    }
 
     .header-logo{
         display: none;
@@ -227,16 +287,109 @@ html{
         width: 60px;
     }
 
-    .sobre-info-container,.cards-container{
-        width: 10%;
+    .dropdown{
+        display: block;
+    }
+
+    .navbar-botoes{
+        display: none;
+    }
+
+    .mobile-logo-escrita{
+        display: block;
+        height: 20%;
+    }
+
+    /* HEADER MEDIA QUERIES */
+
+    /* SEÇÃO SOBRE MEDIA QUERIES */
+
+    #sobre{
+        align-items: center;
+        margin: 12% 10% 12% 10%;
+    }
+
+    .sobre-info-container{
+        width: 95%;
+        flex-direction: column;
+        margin: 3% 0 3% 0;
     }
 
     .sobre-info-container p{
-        width: 10ch;
+        width: 100%;
+    }
+
+    .sobre-info-container img{
+        width: 100%;
+        object-fit: cover;
+        box-shadow: -3px 3px 10px 1px black;
+    }
+
+    /* SEÇÃO SOBRE MEDIA QUERIES */
+
+    /* SEÇÃO PRINCIPAIS PONTOS MEDIA QUERIES */
+
+    .principais-pontos{
+        margin: 12% 10% 12% 10%;
+    }
+
+    .cards-container{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 20%;
+        width: 95%;
+    }
+
+    /* SEÇÃO PRINCIPAIS PONTOS MEDIA QUERIES */
+
+    /* SEÇÂO COMPRE SEU INGRESSO */
+
+    .ingressos h1{
+        font-size: 2rem;
+    }
+
+    .ingressos{
+        height: 20rem;
+    }
+
+    /* SEÇÂO COMPRE SEU INGRESSO */
+
+    /* RODAPÉ MEDIA QUERIES */
+
+    .rodape{
+        display: none;
     }
 
     .criadores a{
         font-size: 5px;
     }
 
+    .mobile-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .footer-nav{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .footer-opensource{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* RODAPÉ MEDIA QUERIES */
 }
