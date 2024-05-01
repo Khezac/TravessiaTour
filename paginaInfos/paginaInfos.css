@@ -157,7 +157,7 @@ html{
 .mapa{
     width: 100%;
     object-fit: cover;
-    height: 900px;
+    background-size: cover;
 }
 
 .ingressos h1{
@@ -269,6 +269,7 @@ html{
 
     .fixed-top{
         height: 10%;
+        justify-content: space-between;
     }
 
     .header-logo{
@@ -283,6 +284,19 @@ html{
     .dropdown{
         display: block;
     }
+
+    .dropdown .btn{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-menu{
+        background-color: #5578a3;
+    }
+
 
     .navbar-botoes{
         display: none;
@@ -344,10 +358,12 @@ html{
 
     /* RODAPÉ MEDIA QUERIES */
 
+    
     .rodape{
         display: none;
     }
 
+    
     .criadores a{
         font-size: 5px;
     }
@@ -358,6 +374,17 @@ html{
         justify-content: center;
         flex-direction: column;
         height: 150px;
+    }
+
+    .footer-criadores{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;        
     }
 
     .footer-nav{
@@ -376,6 +403,7 @@ html{
         padding: 0;
         list-style: none;
     }
+
 
     /* RODAPÉ MEDIA QUERIES */
 }
