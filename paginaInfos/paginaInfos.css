@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    height:100%;
+    background-image: linear-gradient(#58B8FF, #60BEFF, #60BEFF, #86CDFF, #9ED7FF, #B2DFFF, #C3E6FF, #CAE9FF, #D2EDFF, #FFFFFF);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ESTILIZAÇÂO DO HEADER */
+
+#header{
+    display: flex;
+    padding:1% 5% 0 5%;
+    width: 100%;
+    height: 85vh;
+    background-image: url(../assets/paginaInfos/1seçãoBackground.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header-logo{
+    height: 90px;
+}
+
+.mobileheader-logo{
+    display: none;
+}
+
+.mobile-logo-escrita{
+    display: none;
+}
+
+.fixed-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    padding:1% 5% 1% 5%;
+    background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
+}
+
+.navbar-botoes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-botoes li{
+    margin: 0;
+}
+
+.dropdown{
+    display: none;
+}
+
+.fixed-top a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+#infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+.infos-titulo{
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.infos-info-container,.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.infos-info-container p{
+    width: 70ch;
+    font-weight: 400;
+}
+
+.infos-info-container img{
+    width: 30%;
+    object-fit: cover;
+}
+
+#quando-ir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+#grau-dif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+.cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    text-align: center;
+    width: 24rem;
+    transition-duration: 0.2s;
+}
+
+.card p::first-line{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.card:hover{
+    scale:1.05;
+    box-shadow: -7px 6px 20px 2px black;
+}
+
+#info-final{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+.mapa{
+    width: 100%;
+    object-fit: cover;
+    height: 900px;
+}
+
+.ingressos h1{
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    font-size: 54px;
+}
+
+.ingressos img{
+    width: 100%;
+}
+
+.botao-ingresso{
+    transition-duration: 0.1s;
+}
+
+.botao-ingresso:hover{
+    scale: 1.1;
+}
+
+/* COMPRE SEU INGRESSO */
+
+/* RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-image: linear-gradient(#FFFFFF, #9DD7FF, #7DADD6, #5578A3, #314875, #253765, #172654, #030A39);
+    width: 100%;
+}
+
+.rodape img{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    margin-right: 5%;
+    text-shadow: 0 0 5px black;
+}
+
+.footer-logo{
+    height: 90px;
+}
+
+.criadores{
+    margin: 0;
+}
+
+.criadores a{
+    color: white;
+    text-decoration: none;
+}
+
+.criadores a:hover{
+    color: rgb(192, 192, 192);
+}
+
+.mobile-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.footer-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer-opensource{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-rodape p{
+    margin: 0;
+}
+
+/* RODAPÉ */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+
+    /* HEADER MEDIA QUERIES */
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-top{
+        height: 10%;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .mobileheader-logo{
+        display: block;
+        width: 60px;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .navbar-botoes{
+        display: none;
+    }
+
+    .mobile-logo-escrita{
+        display: block;
+        height: 20%;
+    }
+
+    /* HEADER MEDIA QUERIES */
+
+    /* SEÇÃO SOBRE MEDIA QUERIES */
+
+    #infos{
+        align-items: center;
+        margin: 12% 10% 12% 10%;
+    }
+
+    .infos-info-container{
+        width: 95%;
+        flex-direction: column;
+        margin: 3% 0 3% 0;
+    }
+
+    .infos-info-container p{
+        width: 100%;
+    }
+
+    .infos-info-container img{
+        width: 100%;
+        object-fit: cover;
+        box-shadow: -3px 3px 10px 1px black;
+    }
+
+
+    .cards-container{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 20%;
+        width: 95%;
+    }
+
+    /* SEÇÃO PRINCIPAIS PONTOS MEDIA QUERIES */
+
+    /* SEÇÂO COMPRE SEU INGRESSO */
+
+    .ingressos h1{
+        font-size: 2rem;
+    }
+
+    .ingressos{
+        height: 20rem;
+    }
+
+    /* SEÇÂO COMPRE SEU INGRESSO */
+
+    /* RODAPÉ MEDIA QUERIES */
+
+    .rodape{
+        display: none;
+    }
+
+    .criadores a{
+        font-size: 5px;
+    }
+
+    .mobile-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .footer-nav{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .footer-opensource{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* RODAPÉ MEDIA QUERIES */
+}
