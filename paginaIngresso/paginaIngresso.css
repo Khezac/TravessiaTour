@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    height:100%;
+    background-image: linear-gradient(#58B8FF, #60BEFF, #60BEFF, #86CDFF, #9ED7FF, #B2DFFF, #C3E6FF, #CAE9FF, #D2EDFF, #FFFFFF);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ESTILIZAÇÂO DO HEADER */
+
+#header{
+    display: flex;
+    padding:1% 5% 0 5%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/paginaFormulario/formBackground.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header-logo{
+    height: 90px;
+}
+
+.mobileheader-logo{
+    display: none;
+}
+
+.mobile-logo-escrita{
+    display: none;
+}
+
+.fixed-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    padding:1% 5% 1% 5%;
+    background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
+}
+
+.navbar-botoes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-botoes li{
+    margin: 0;
+}
+
+.dropdown{
+    display: none;
+}
+
+.fixed-top a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+/* ESTILIZAÇÂO DO HEADER */
+
+/* ESTILIZAÇÃO DO FORMULARIO*/
+section {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 60%;  
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.568);
+    width: 100%;
+    margin: 25px;
+    border-radius: 15px;    
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    
+}
+
+form div {
+    margin-bottom: 5%;
+    width: 45%;
+}
+
+.campo {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 10px rgb(100, 99, 99);
+    padding-left: 4%;
+}
+
+.duracao-travessia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.duracao-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:5% 0 0 0;
+    height: 80%;
+    align-items: center;
+    
+}
+
+.dias {
+    margin-bottom: 0;
+       
+}
+
+section .botao-comprar {
+    background-color: #58B8FF;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* ESTILIZAÇÃO DO FORMULARIO*/
+
+
+/* RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-image: linear-gradient(#FFFFFF, #9DD7FF, #7DADD6, #5578A3, #314875, #253765, #172654, #030A39);
+    width: 100%;
+}
+
+.rodape img{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    margin-right: 5%;
+    text-shadow: 0 0 5px black;
+}
+
+.footer-logo{
+    height: 90px;
+}
+
+.criadores{
+    margin: 0;
+}
+
+.criadores a{
+    color: white;
+    text-decoration: none;
+}
+
+.criadores a:hover{
+    color: rgb(192, 192, 192);
+}
+
+.mobile-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.footer-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.footer-opensource{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-rodape p{
+    margin: 0;
+}
+
+/* RODAPÉ */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px){
+
+    /* HEADER MEDIA QUERIES */
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-top{
+        height: 10%;
+        justify-content: space-between;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .mobileheader-logo{
+        display: block;
+        width: 60px;
+    }
+
+    .dropdown{
+        display: block;               
+    }
+
+    .dropdown .btn{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 12px;               
+    }
+
+    .dropdown .dropdown-menu{
+        background-color: #5578a3;
+    }
+
+
+    .navbar-botoes{
+        display: none;
+    }
+
+   
+
+    /* HEADER MEDIA QUERIES */
+
+
+    /* RODAPÉ MEDIA QUERIES */
+
+    .rodape{
+        display: none;
+    }
+
+    
+    .criadores a{
+        font-size: 5px;
+    }
+
+    .mobile-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .footer-criadores{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;        
+    }
+
+    .footer-nav{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .footer-opensource{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+
+    /* RODAPÉ MEDIA QUERIES */
+}
