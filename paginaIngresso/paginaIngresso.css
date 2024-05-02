@@ -44,22 +44,25 @@ html{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 15%;
     padding:1% 5% 1% 5%;
     background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
 }
 
 .navbar-botoes{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
     padding: 0;
     margin: 0;
+    width: 10%;
 }
 
 .navbar-botoes li{
@@ -68,6 +71,32 @@ html{
 
 .dropdown{
     display: none;
+}
+
+@media screen and (max-device-width: 1600px) {
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown .btn{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-menu{
+        background-color: #5578a3;
+    }
+
+    .navbar-botoes{
+        display: none;
+    }
 }
 
 .fixed-top a{
@@ -87,20 +116,19 @@ section {
     transform: translate(-50%, 0%);
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    width: 60%;  
+    align-items: center;
+    width: 60%;
 }
 
 form {
     background-color: rgba(255, 255, 255, 0.568);
     width: 100%;
     margin: 25px;
-    border-radius: 15px;    
+    border-radius: 15px;
     padding: 5%;
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
-    
 }
 
 form div {
@@ -122,7 +150,6 @@ form div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .duracao-input {
@@ -137,14 +164,18 @@ form div {
 
 .dias {
     margin-bottom: 0;
-       
+}
+
+.comprar-container{
+    width: 20%;
 }
 
 section .botao-comprar {
+    width: 100%;
+    height: 100%;
     background-color: #58B8FF;
     color: white;
     padding: 5px;
-    border-radius: 10px;
 }
 /* ESTILIZAÇÃO DO FORMULARIO*/
 
@@ -175,6 +206,17 @@ section .botao-comprar {
 
 .footer-logo{
     height: 90px;
+}
+
+.footer-criadores{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .criadores{
@@ -223,6 +265,12 @@ section .botao-comprar {
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 1170px){
+    .comprar-container{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px){
 
     /* HEADER MEDIA QUERIES */
@@ -249,7 +297,7 @@ section .botao-comprar {
     }
 
     .dropdown{
-        display: block;               
+        display: block;
     }
 
     .dropdown .btn{
@@ -257,7 +305,7 @@ section .botao-comprar {
     }
 
     .dropdown .dropdown-item {
-        font-size: 12px;               
+        font-size: 12px;
     }
 
     .dropdown .dropdown-menu{
@@ -269,10 +317,35 @@ section .botao-comprar {
         display: none;
     }
 
-   
+    .mobile-logo-escrita{
+        display: block;
+        height: 20%;
+    }
 
     /* HEADER MEDIA QUERIES */
 
+    /* FORM MEDIA QUERIES */
+
+    form {
+        width: 100%;
+        margin: 25px;
+        border-radius: 15px;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    form div {
+        width: 100%;
+    }
+
+    .campo {
+        width: 100%;
+        height: 40px;
+    }
+
+    /* FORM MEDIA QUERIES */
 
     /* RODAPÉ MEDIA QUERIES */
 
@@ -280,7 +353,6 @@ section .botao-comprar {
         display: none;
     }
 
-    
     .criadores a{
         font-size: 5px;
     }
@@ -301,7 +373,7 @@ section .botao-comprar {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
 
     .footer-nav{
@@ -320,8 +392,6 @@ section .botao-comprar {
         padding: 0;
         list-style: none;
     }
-
-
 
     /* RODAPÉ MEDIA QUERIES */
 }

@@ -20,7 +20,7 @@ html{
     display: flex;
     padding:1% 5% 0 5%;
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     background-image: url(../assets/paginaContato/Travessia-Petropolis-Teresopolis-1200x630.jpg.webp);
     background-position: center top;
     background-repeat: no-repeat;
@@ -44,22 +44,25 @@ html{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 15%;
     padding:1% 5% 1% 5%;
     background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
 }
 
 .navbar-botoes{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
     padding: 0;
     margin: 0;
+    width: 10%;
 }
 
 .navbar-botoes li{
@@ -68,6 +71,36 @@ html{
 
 .dropdown{
     display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown .btn{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-menu{
+        background-color: #5578a3;
+    }
+
+    .navbar-botoes{
+        display: none;
+    }
+
+    .contato-links{
+        opacity: 1;
+    }
 }
 
 .fixed-top a{
@@ -83,22 +116,24 @@ html{
 
 section {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
     width: 40%;
     height: 40%;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+
 .contato {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contato p {
     font-size: 24px;
     color: white;
@@ -126,12 +161,10 @@ section {
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 .contato-links:hover  {
     opacity: 1;
-    
 }
 
 section div svg {
@@ -171,6 +204,17 @@ section div svg {
 
 .footer-logo{
     height: 90px;
+}
+
+.footer-criadores{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .criadores{
@@ -219,6 +263,13 @@ section div svg {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 768px) and (max-width: 1085px) {
+    section {
+        top: 30%;
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 768px){
 
     /* HEADER MEDIA QUERIES */
@@ -245,7 +296,7 @@ section div svg {
     }
 
     .dropdown{
-        display: block;               
+        display: block;
     }
 
     .dropdown .btn{
@@ -253,24 +304,35 @@ section div svg {
     }
 
     .dropdown .dropdown-item {
-        font-size: 12px;               
+        font-size: 12px;
     }
 
     .dropdown .dropdown-menu{
         background-color: #5578a3;
     }
 
-
     .navbar-botoes{
         display: none;
     }
 
-    .mobile-logo-escrita{
-        display: block;
-        height: 20%;
+    /* HEADER MEDIA QUERIES */
+
+    /* CONTATOS */
+    section {
+        top: 35%;
+        width: 80%;
+        height: 40%;
     }
 
-    /* HEADER MEDIA QUERIES */
+    .contato-links{
+        opacity: 1;
+    }
+
+    .contato-links:hover{
+        opacity: 1;
+    }
+
+    /* CONTATOS */
 
     /* RODAPÉ MEDIA QUERIES */
 
@@ -278,7 +340,6 @@ section div svg {
         display: none;
     }
 
-    
     .criadores a{
         font-size: 5px;
     }
@@ -299,7 +360,7 @@ section div svg {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
 
     .footer-nav{
@@ -318,8 +379,39 @@ section div svg {
         padding: 0;
         list-style: none;
     }
-
-
-
-    /* RODAPÉ MEDIA QUERIES */
 }
+
+    @media only screen and (max-width: 560px){
+        section {
+            top: 35%;
+            width: 80%;
+            height: 40%;
+        }
+    
+        .contato p {
+            font-size: 16px;
+        }
+    
+        .contato-links {
+            width: 120px;
+            height: 120px;
+        }
+    
+    
+        .contato-foto {
+            width: 120px;
+            height: 120px;
+        }
+    
+        section div svg {
+            height: 30px;
+            width: 40px;
+        }
+    }
+
+    @media only screen and (max-width: 320px){
+        section {
+            top: 30%;
+        }
+    }
+    /* RODAPÉ MEDIA QUERIES */

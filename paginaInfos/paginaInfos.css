@@ -15,6 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 /* ESTILIZAÇÂO DO HEADER */
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 #header{
     display: flex;
@@ -44,22 +48,25 @@ html{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 15%;
     padding:1% 5% 1% 5%;
     background-image: linear-gradient(rgb(0, 153, 255),rgba(255, 255, 255, 0));
 }
 
 .navbar-botoes{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
     padding: 0;
     margin: 0;
+    width: 10%;
 }
 
 .navbar-botoes li{
@@ -70,6 +77,32 @@ html{
     display: none;
 }
 
+@media screen and (max-device-width: 1600px) {
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+    .dropdown .btn{
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 12px;
+    }
+
+    .dropdown .dropdown-menu{
+        background-color: #5578a3;
+    }
+
+    .navbar-botoes{
+        display: none;
+    }
+}
+
 .fixed-top a{
     text-decoration: none;
     font-size: 2rem;
@@ -77,12 +110,17 @@ html{
     text-shadow: 0 0 4px black;
 }
 
-#infos{
+/* ESTILIZAÇÂO DO HEADER */
+
+/* SECTION COMO CHEGAR */
+
+.container{
+    padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3% 10% 3% 10%;
-    width: 80%;
+    margin: 3% 15% 3% 15%;
 }
 
 .infos-titulo{
@@ -98,14 +136,18 @@ html{
 }
 
 .infos-info-container p{
-    width: 70ch;
+    width: 100%;
     font-weight: 400;
 }
 
 .infos-info-container img{
-    width: 30%;
+    width: 35%;
     object-fit: cover;
 }
+
+/* SECTION COMO CHEGAR */
+
+/* QUANDO IR */
 
 #quando-ir{
     display: flex;
@@ -114,6 +156,10 @@ html{
     margin: 3% 10% 3% 10%;
     width: 80%;
 }
+
+/* QUANDO IR */
+
+/* GRAU DE DIFF */
 
 #grau-dif{
     display: flex;
@@ -144,6 +190,10 @@ html{
     scale:1.05;
     box-shadow: -7px 6px 20px 2px black;
 }
+
+/* GRAU DE DIFF */
+
+/* MAPA DE TRAJETORIA SECTION */
 
 #info-final{
     display: flex;
@@ -180,7 +230,7 @@ html{
     scale: 1.1;
 }
 
-/* COMPRE SEU INGRESSO */
+/* MAPA DE TRAJETORIA SECTION */
 
 /* RODAPÉ */
 
@@ -208,6 +258,17 @@ html{
 
 .footer-logo{
     height: 90px;
+}
+
+.footer-criadores{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .criadores{
@@ -304,7 +365,7 @@ html{
 
     .mobile-logo-escrita{
         display: block;
-        height: 20%;
+        width: 90%;
     }
 
     /* HEADER MEDIA QUERIES */
