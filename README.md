@@ -1,5 +1,5 @@
 # Front End Essentials - Grupo 5
-## Travessia Tour!
+## Travessia Tour
 ## Alunos:
 
 Cássio Penha,
