@@ -1,4 +1,4 @@
-# Front End Essentials - Grupo 5
+# FrontEnd Essencial - Grupo 5
 ## Travessia Tour
 ## Alunos:
 
