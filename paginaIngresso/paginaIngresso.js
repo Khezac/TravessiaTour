@@ -13,8 +13,7 @@ function comprarIngresso(e){
     form.append(div);
 
     setTimeout(() => {
-        div.remove()
-        // form.submit()
+        form.submit()
     }, 2000);
 };
 
