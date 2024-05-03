@@ -73,7 +73,7 @@ html{
     display: none;
 }
 
-@media screen and (max-device-width: 1600px) {
+@media screen and (max-device-width: 1150px) {
     .dropdown{
         display: block;
     }
@@ -97,9 +97,32 @@ html{
 
 .fixed-top a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 4px black;
+}
+
+.seta{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgba(255, 255, 255, 0.548);
+    animation: .5s ease-in-out 1s infinite alternate sobe-desce;
+}
+
+.seta:hover{
+    color: rgb(255, 255, 255);
+}
+
+@keyframes sobe-desce {
+    from{
+        bottom: 17%;
+    }
+
+    to{
+        bottom: 14%;
+    }
 }
 
 /* ESTILIZAÇÂO DO HEADER */
@@ -213,10 +236,21 @@ html{
 
 .botao-ingresso{
     transition-duration: 0.1s;
+    animation: .5s ease-in-out 1s infinite alternate animacaozinha;
 }
 
 .botao-ingresso:hover{
     scale: 1.1;
+}
+
+@keyframes animacaozinha {
+    from{
+        scale: 0.9;
+    }
+
+    to{
+        scale: 1;
+    }
 }
 
 /* COMPRE SEU INGRESSO */

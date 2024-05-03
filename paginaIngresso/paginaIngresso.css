@@ -73,7 +73,7 @@ html{
     display: none;
 }
 
-@media screen and (max-device-width: 1600px) {
+@media screen and (max-device-width: 1150px) {
     .dropdown{
         display: block;
     }
@@ -101,7 +101,7 @@ html{
 
 .fixed-top a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 4px black;
 }
@@ -109,6 +109,7 @@ html{
 /* ESTILIZAÇÂO DO HEADER */
 
 /* ESTILIZAÇÃO DO FORMULARIO*/
+
 section {
     position: absolute;
     top: 20%;
@@ -128,6 +129,7 @@ form {
     padding: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10%;
 }
 
@@ -159,11 +161,30 @@ form div {
     margin:5% 0 0 0;
     height: 80%;
     align-items: center;
-    
 }
 
 .dias {
     margin-bottom: 0;
+}
+
+#valor-label{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 95px;
+}
+
+#passeio-valor{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 74px;
 }
 
 .comprar-container{
@@ -176,6 +197,42 @@ section .botao-comprar {
     background-color: #58B8FF;
     color: white;
     padding: 5px;
+}
+
+.aviso{
+    position: absolute;
+    top:115%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47, 204, 47);
+    border-radius: 8px;
+    border: 1px solid rgb(9, 88, 9);
+    padding: 2%;
+    margin: 0;
+
+}
+
+.aviso p{
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(9, 88, 9);
+}
+
+.preco{
+    bottom: 2%;
+    margin: 0;
+    text-align: center;
+}
+
+.preco p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
 }
 /* ESTILIZAÇÃO DO FORMULARIO*/
 
@@ -343,6 +400,9 @@ section .botao-comprar {
     .campo {
         width: 100%;
         height: 40px;
+    }
+    .aviso{
+        top:110%;
     }
 
     /* FORM MEDIA QUERIES */
