@@ -1,4 +1,5 @@
 # Front End Essentials - Grupo 5
+## Travessia Tour!
 ## Alunos:
 
 Cássio Penha,
@@ -10,5 +11,3 @@ Heitor Bittencourt,
 Khezac Khalleb,
 
 Leonardo Esplinio.
-
-## Travessia Tour
