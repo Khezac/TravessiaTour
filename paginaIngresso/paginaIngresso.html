@@ -58,27 +58,26 @@
             </ul>
         </div>
       </nav>
-     
     </header>
 
-    <section id="formulario">
+    <section>
       <h2 class="compre-ingresso-titulo">Compre seu Ingresso</h2>
-      <form>
+      <form action="https://6633c0f5f7d50bbd9b4a8f1b.mockapi.io/passeios/historico" method="post" id="formulario-ingresso" onsubmit="comprarIngresso()">
         <div>
             <label for="name">Nome:</label><br>
-            <input class="campo" type="text" name="nome" placeholder="Nome Completo" autocomplete="additional-name">
+            <input required id="nome" class="campo" type="text" name="nome" placeholder="Nome Completo" autocomplete="additional-name">
         </div>
         <div>
             <label for="cpf">CPF:</label><br>
-            <input class="campo" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx">
+            <input required class="campo" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx">
         </div>
         <div>
             <label for="contato">Contato:</label><br>
-            <input class="campo" class="campo" type="tel" name="contato" placeholder="(xx) xxxxx - xxxx" autocomplete="tel">
+            <input required class="campo" class="campo" type="tel" name="contato" placeholder="(xx) xxxxx - xxxx" autocomplete="tel">
         </div>
         <div>
             <label for="data">Data do passeio</label><br>
-            <input class="campo" type="date" name="data-passeio">
+            <input required class="campo" type="date" name="data-passeio">
         </div>
         <div>
             <label for="guias-turisticos">Guias Turisticos</label><br>
@@ -89,20 +88,21 @@
                 <option value="heitor">Heitor Bittencourt</option>
                 <option value="khezac">Khezac Khalleb</option>
                 <option value="leo">Leo Esplinio</option>
-            </select>            
+            </select>
         </div>
         <div class="duracao-travessia">
             <label class="titulo-duracao" for="dias">Duração da Travessia:</label>
             <div class="duracao-input">
-                <input class="dias" type="radio" name="dias" value="2">&nbsp;
+                <input required class="dias" type="radio" name="dias" value="2" onchange="precoPasseio()">&nbsp;
                 <label for="2">2 dias</label> &nbsp;
-                <input class="dias" type="radio" name="dias" value="3">&nbsp;
-                <label for="3">3 dias</label> 
+                <input required class="dias" type="radio" name="dias" value="3" onchange="precoPasseio()">&nbsp;
+                <label for="3">3 dias</label>
             </div>
         </div>
         </form>
+
         <div class="comprar-container">
-            <input class="botao-comprar btn btn-primary " type="button" value="Comprar Ingresso" id="comprar-ingresso">
+            <input class="botao-comprar btn btn-primary " form="formulario-ingresso" type="submit" value="Comprar Ingresso" id="comprar-ingresso">
         </div>
     </section>
 
@@ -166,5 +166,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="paginaIngresso.js"></script>
   </body>
 </html>

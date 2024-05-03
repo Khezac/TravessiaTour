@@ -73,7 +73,7 @@ html{
     display: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1150px) {
     .dropdown{
         display: block;
     }
@@ -105,7 +105,7 @@ html{
 
 .fixed-top a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     text-shadow: 0 0 4px black;
 }
