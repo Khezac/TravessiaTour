@@ -16,9 +16,9 @@ Criamos, nessa aplicação Front-end, um website que mostra um pouco a Travessia
 
 
 <div style="display: flex; justify-content:space-between;">
-    <figure style="text-align:center; flex:6;">
+    <figure style="text-align:center; flex:3;">
         <figcaption styles="text-align: center;">Desktop</figcaption>
-        <img src="./assets/paginaPrincipal/TravessiaTour.png" alt= "Summit Lake - Charles Donlea" width="1000"/>
+        <img src="./assets/paginaPrincipal/TravessiaTour.png" alt= "Summit Lake - Charles Donlea" width="800"/>
     </figure>
     <figure style="text-align:center; flex:1;">
         <figcaption styles="text-align: center;">Mobile</figcaption>
