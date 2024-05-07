@@ -14,19 +14,7 @@ Integrantes do grupo responsável:
 
 Criamos, nessa aplicação Front-end, um website que mostra um pouco a Travessia Petrópolis x Teresópolis, representado por diversas imagens e mencionando variadas informações de grande importância, possibilitando também marcar um agendamento de passeio na mesma.
 
-
-<div style="display: flex; justify-content:space-between;">
-    <figure style="text-align:center; flex:3;">
-        <figcaption styles="text-align: center;">Desktop</figcaption>
-        <img src="./assets/paginaPrincipal/TravessiaTour.png" alt= "Summit Lake - Charles Donlea" width="800"/>
-    </figure>
-    <figure style="text-align:center; flex:1;">
-        <figcaption styles="text-align: center;">Mobile</figcaption>
-        <img src="./assets/paginaPrincipal/TravessiaTourMobile.png" alt= "Confident Data Skills - Kirill Eremenko" alt="Confident Data Skills" width="200px"/>
-    </figure>
-</div>
-
-
+<img src="./assets/paginaPrincipal/TravessiaTour.png" alt= "Summit Lake - Charles Donlea" width="800" />
 
 ## Informações técnicas do projeto:
 
