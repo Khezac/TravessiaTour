@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="paginaIngresso.css" />
+    <link rel="stylesheet" href="../style/paginaIngresso.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,7 @@
   <body>
     <header id="header">
       <nav class="fixed-top">
-        <a href="#header"
+        <a href="../html/index.html"
           ><img
             class="header-logo"
             src="../assets/logo/LogoInteira.png"
@@ -34,10 +34,10 @@
           />
         </a>
         <ul class="navbar-botoes">
-          <li><a href="../paginaPrincipal/paginaPrincipal.html">Inicio</a></li>
-          <li><a href="../paginaInfos/paginaInfos.html">Informações</a></li>
-          <li><a href="#header">Ingressos</a></li>
-          <li><a href="../paginacontatos/paginaContato.html">Contato</a></li>
+          <li><a href="#header">Inicio</a></li>
+          <li><a href="../html/paginaInfos.html">Informações</a></li>
+          <li><a href="../html/paginaIngresso.html">Ingressos</a></li>
+          <li><a href="../html/paginaContato.html">Contato</a></li>
         </ul>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
@@ -45,17 +45,17 @@
                 MENU
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../paginaPrincipal/paginaPrincipal.html"">Inicio</a></li>
-                <li>
-                    <a class="dropdown-item" href="../paginaInfos/paginaInfos.html">Informações</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="../paginaIngresso/paginaIngresso.html">Ingressos</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../paginacontatos/paginaContato.html">Contatos</a>
-                </li>
-            </ul>
+              <li><a class="dropdown-item" href="#header">Inicio</a></li>
+              <li>
+                  <a class="dropdown-item" href="../html/paginaInfos.html">Informações</a>
+              </li>
+              <li>
+                  <a class="dropdown-item" href="../html/paginaIngresso.html">Ingressos</a>
+              </li>
+              <li>
+                  <a class="dropdown-item" href="../html/paginaContato.html">Contatos</a>
+              </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -73,7 +73,7 @@
         </div>
         <div>
             <label for="contato">Contato:</label><br>
-            <input required class="campo" class="campo" type="tel" name="contato" placeholder="(xx) xxxxx - xxxx" autocomplete="tel">
+            <input required class="campo" type="tel" name="contato" placeholder="(xx) xxxxx - xxxx" autocomplete="tel">
         </div>
         <div>
             <label for="data">Data do passeio</label><br>
@@ -126,7 +126,7 @@
           </li>
           <li>&nbsp&nbsp</li>
           <li>
-            <a href=""><!-- ADICIONAR LINK DO POST DO LINKEDIN -->
+            <a href="" target="_blank"><!-- ADICIONAR LINK DO POST DO LINKEDIN -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -143,19 +143,21 @@
         </li>
       </ul>
       <ul class="footer-nav">
-        <li>Inicio</li>
+        <li><a href="#header">Inicio</a></li>
         <li>&nbsp-&nbsp</li>
-        <li>Informações</li>
+        <li><a href="../html/paginaInfos.html">Informações</a></li>
         <li>&nbsp-&nbsp</li>
-        <li>Ingressos</li>
+        <li><a href="../html/paginaIngresso.html">Ingressos</a></li>
+        <li>&nbsp-&nbsp</li>
+        <li><a href="../html/paginaContato.html">Contatos</a></li>
       </ul>
       <ul class="footer-criadores">
         <li>Criado em conjunto por:</li>
-        <li>@Cássio Penha,</li>
-        <li>@César Guerra-Peixe,</li>
-        <li>@Heitor Bittencourt,</li>
-        <li>@Khezac Khalleb,</li>
-        <li>@Leonardo Esplinio</li>
+        <li><a href="https://www.linkedin.com/in/c%C3%A1ssio-penha-pcd-6497b8170/" target="_blank">@Cássio Penha</a>,</li>
+        <li><a href="https://www.linkedin.com/in/cesarguerrapeixe/" target="_blank">@César Guerra-Peixe</a>,</li>
+        <li><a href="https://www.linkedin.com/in/heitor-bittencourt/" target="_blank">@Heitor Bittencourt</a>,</li>
+        <li><a href="https://www.linkedin.com/in/khezac/" target="_blank">@Khezac Khalleb</a>,</li>
+        <li><a href="https://www.linkedin.com/in/leoesplinio/" target="_blank">@Leonardo Esplinio</a></li>
       </ul>
       <p></p>
       <p>2024 Residencia Serratec</p>
@@ -166,6 +168,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="paginaIngresso.js"></script>
+    <script src="../js/paginaIngresso.js"></script>
   </body>
 </html>

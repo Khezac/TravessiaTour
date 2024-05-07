@@ -20,8 +20,8 @@ html{
     display: flex;
     padding:1% 5% 0 5%;
     width: 100%;
-    height: 95vh;
-    background-image: url(../assets/paginaContato/Travessia-Petropolis-Teresopolis-1200x630.jpg.webp);
+    height: 100vh;
+    background-image: url(../assets/paginaFormulario/formBackground.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,7 +73,7 @@ html{
     display: none;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-device-width: 1150px) {
     .dropdown{
         display: block;
     }
@@ -97,10 +97,6 @@ html{
     .navbar-botoes{
         display: none;
     }
-
-    .contato-links{
-        opacity: 1;
-    }
 }
 
 .fixed-top a{
@@ -112,70 +108,133 @@ html{
 
 /* ESTILIZAÇÂO DO HEADER */
 
-/* ESTILIZAÇÂO CONTATOS */
+/* ESTILIZAÇÃO DO FORMULARIO*/
 
 section {
     position: absolute;
-    top: 45%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 40%;
+    transform: translate(-50%, 0%);
     display: flex;
-    gap: 4%;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 60%;
 }
 
-.contato {
+form {
+    background-color: rgba(255, 255, 255, 0.568);
+    width: 100%;
+    margin: 25px;
+    border-radius: 15px;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+}
+
+form div {
+    margin-bottom: 5%;
+    width: 45%;
+}
+
+.campo {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 10px rgb(100, 99, 99);
+    padding-left: 4%;
+}
+
+.duracao-travessia {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contato p {
-    font-size: 24px;
-    color: white;
-    font-weight: 600;
-    text-shadow: 0 0 10px black;
+.duracao-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:5% 0 0 0;
+    height: 80%;
+    align-items: center;
 }
 
-.contato-links {
+.dias {
+    margin-bottom: 0;
+}
+
+#valor-label{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 95px;
+}
+
+#passeio-valor{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 74px;
+}
+
+.comprar-container{
+    width: 20%;
+}
+
+section .botao-comprar {
+    width: 100%;
+    height: 100%;
+    background-color: #58B8FF;
+    color: white;
+    padding: 5px;
+}
+
+.aviso{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.583);
-    width: 180px;
-    height: 180px;
+    top:115%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    opacity: 0;
-    transition-duration: 0.1s;
-    box-shadow: 0 0 10px black;;
+    background-color: rgb(47, 204, 47);
+    border-radius: 8px;
+    border: 1px solid rgb(9, 88, 9);
+    padding: 2%;
+    margin: 0;
+
 }
 
-
-.contato-foto {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
+.aviso p{
+    text-align: center;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(9, 88, 9);
 }
 
-.contato-links:hover  {
-    opacity: 1;
+.preco{
+    bottom: 2%;
+    margin: 0;
+    text-align: center;
 }
 
-section div svg {
-    height: 48px;
-    width: 48px;
+.preco p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
 }
-
-
-/* ESTILIZAÇÂO CONTATOS */
-
-
+/* ESTILIZAÇÃO DO FORMULARIO*/
 
 
 /* RODAPÉ */
@@ -217,6 +276,11 @@ section div svg {
     flex-wrap: wrap;
 }
 
+.footer-criadores a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .criadores{
     margin: 0;
 }
@@ -245,6 +309,11 @@ section div svg {
     display: flex;
 }
 
+.footer-nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer-opensource{
     display: flex;
     list-style: none;
@@ -263,10 +332,9 @@ section div svg {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 768px) and (max-width: 1085px) {
-    section {
-        top: 30%;
-        width: 50%;
+@media only screen and (max-width: 1170px){
+    .comprar-container{
+        width: 100%;
     }
 }
 
@@ -311,28 +379,43 @@ section div svg {
         background-color: #5578a3;
     }
 
+
     .navbar-botoes{
         display: none;
     }
 
+    .mobile-logo-escrita{
+        display: block;
+        height: 20%;
+    }
+
     /* HEADER MEDIA QUERIES */
 
-    /* CONTATOS */
-    section {
-        top: 35%;
-        width: 80%;
-        height: 40%;
+    /* FORM MEDIA QUERIES */
+
+    form {
+        width: 100%;
+        margin: 25px;
+        border-radius: 15px;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 
-    .contato-links{
-        opacity: 1;
+    form div {
+        width: 100%;
     }
 
-    .contato-links:hover{
-        opacity: 1;
+    .campo {
+        width: 100%;
+        height: 40px;
+    }
+    .aviso{
+        top:110%;
     }
 
-    /* CONTATOS */
+    /* FORM MEDIA QUERIES */
 
     /* RODAPÉ MEDIA QUERIES */
 
@@ -379,39 +462,6 @@ section div svg {
         padding: 0;
         list-style: none;
     }
-}
 
-    @media only screen and (max-width: 560px){
-        section {
-            top: 35%;
-            width: 80%;
-            height: 40%;
-        }
-    
-        .contato p {
-            font-size: 16px;
-        }
-    
-        .contato-links {
-            width: 120px;
-            height: 120px;
-        }
-    
-    
-        .contato-foto {
-            width: 120px;
-            height: 120px;
-        }
-    
-        section div svg {
-            height: 30px;
-            width: 40px;
-        }
-    }
-
-    @media only screen and (max-width: 320px){
-        section {
-            top: 30%;
-        }
-    }
     /* RODAPÉ MEDIA QUERIES */
+}

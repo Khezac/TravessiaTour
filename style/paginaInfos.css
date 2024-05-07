@@ -15,13 +15,17 @@ html{
     scroll-behavior: smooth;
 }
 /* ESTILIZAÇÂO DO HEADER */
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 #header{
     display: flex;
     padding:1% 5% 0 5%;
     width: 100%;
     height: 85vh;
-    background-image: url(../assets/paginaPrincipal/topoPaginaPrincipal.png);
+    background-image: url(../assets/paginaInfos/1seçãoBackground.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -78,6 +82,10 @@ html{
         display: block;
     }
 
+    .dropdown{
+        display: block;
+    }
+
     .dropdown .btn{
         font-size: 12px;
     }
@@ -127,7 +135,7 @@ html{
 
 /* ESTILIZAÇÂO DO HEADER */
 
-/* ESTILZIAÇÂO DO SOBRE */
+/* SECTION COMO CHEGAR */
 
 .container{
     padding: 0;
@@ -138,44 +146,50 @@ html{
     margin: 3% 15% 3% 15%;
 }
 
-.sobre-titulo{
+.infos-titulo{
     font-weight: bold;
     margin-bottom: 3%;
 }
 
-.sobre-info-container,.cards-container{
+.infos-info-container,.cards-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 8%;
 }
 
-.sobre-info-container p{
+.infos-info-container p{
     width: 100%;
     font-weight: 400;
 }
 
-.sobre-info-container img{
-    width: 63%;
+.infos-info-container img{
+    width: 35%;
     object-fit: cover;
 }
 
-/* ESTILZIAÇÂO DO SOBRE */
+/* SECTION COMO CHEGAR */
 
-/* ESTILIZAÇÂO DOS PRINCIPAIS PONTOS */
+/* QUANDO IR */
 
-.principais-pontos{
+#quando-ir{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3% 10% 6% 10%;
+    margin: 3% 10% 3% 10%;
     width: 80%;
 }
 
-.principais-pontos-titulo{
-    font-weight: bold;
-    margin-top: 5%;
-    margin-bottom: 3%;
+/* QUANDO IR */
+
+/* GRAU DE DIFF */
+
+#grau-dif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
 }
 
 .cards-container{
@@ -187,7 +201,6 @@ html{
 .card{
     text-align: center;
     width: 24rem;
-    height: 35rem;
     transition-duration: 0.2s;
 }
 
@@ -201,25 +214,23 @@ html{
     box-shadow: -7px 6px 20px 2px black;
 }
 
-.card img + .card-body h5 {
-    font-weight: bold;
-    font-style: italic;    
-}
+/* GRAU DE DIFF */
 
-/* ESTILIZAÇÂO DOS PRINCIPAIS PONTOS */
+/* MAPA DE TRAJETORIA SECTION */
 
-/* COMPRE SEU INGRESSO */
-
-.ingressos{
+#info-final{
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    margin: 3% 10% 3% 10%;
+    width: 80%;
+}
+
+.mapa{
     width: 100%;
-    background-image: url(../assets/paginaPrincipal/compreSeuIngresso/compreSeuIngresso.png);
     object-fit: cover;
     background-size: cover;
-    height: 600px;
 }
 
 .ingressos h1{
@@ -236,24 +247,13 @@ html{
 
 .botao-ingresso{
     transition-duration: 0.1s;
-    animation: .5s ease-in-out 1s infinite alternate animacaozinha;
 }
 
 .botao-ingresso:hover{
     scale: 1.1;
 }
 
-@keyframes animacaozinha {
-    from{
-        scale: 0.9;
-    }
-
-    to{
-        scale: 1;
-    }
-}
-
-/* COMPRE SEU INGRESSO */
+/* MAPA DE TRAJETORIA SECTION */
 
 /* RODAPÉ */
 
@@ -294,6 +294,11 @@ html{
     flex-wrap: wrap;
 }
 
+.footer-criadores a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .criadores{
     margin: 0;
 }
@@ -322,6 +327,11 @@ html{
     display: flex;
 }
 
+.footer-nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer-opensource{
     display: flex;
     list-style: none;
@@ -339,29 +349,6 @@ html{
 /* RODAPÉ */
 
 /* MEDIA QUERIES */
-
-@media only screen and (max-width: 1170px){
-    .container{
-        align-items: center;
-        margin: 12% 10% 12% 10%;
-    }
-
-    .sobre-info-container{
-        width: 95%;
-        flex-direction: column;
-        margin: 3% 0 3% 0;
-    }
-
-    .sobre-info-container p{
-        width: 100%;
-    }
-
-    .sobre-info-container img{
-        width: 100%;
-        object-fit: cover;
-        box-shadow: -3px 3px 10px 1px black;
-    }
-}
 
 @media only screen and (max-width: 768px){
 
@@ -418,34 +405,27 @@ html{
 
     /* SEÇÃO SOBRE MEDIA QUERIES */
 
-    .container{
+    #infos{
         align-items: center;
         margin: 12% 10% 12% 10%;
     }
 
-    .sobre-info-container{
+    .infos-info-container{
         width: 95%;
         flex-direction: column;
         margin: 3% 0 3% 0;
     }
 
-    .sobre-info-container p{
+    .infos-info-container p{
         width: 100%;
     }
 
-    .sobre-info-container img{
+    .infos-info-container img{
         width: 100%;
         object-fit: cover;
         box-shadow: -3px 3px 10px 1px black;
     }
 
-    /* SEÇÃO SOBRE MEDIA QUERIES */
-
-    /* SEÇÃO PRINCIPAIS PONTOS MEDIA QUERIES */
-
-    .principais-pontos{
-        margin: 12% 10% 12% 10%;
-    }
 
     .cards-container{
         flex-direction: column;
@@ -472,10 +452,12 @@ html{
 
     /* RODAPÉ MEDIA QUERIES */
 
+    
     .rodape{
         display: none;
     }
 
+    
     .criadores a{
         font-size: 5px;
     }
@@ -496,7 +478,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
     }
 
     .footer-nav{
@@ -515,6 +497,7 @@ html{
         padding: 0;
         list-style: none;
     }
+
 
     /* RODAPÉ MEDIA QUERIES */
 }
